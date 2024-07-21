@@ -1,6 +1,6 @@
 import requests
 import json
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, KeyboardButton, ReplyKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, filters
 import logging
 import random
@@ -10,15 +10,9 @@ from chapa import Chapa
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Enable logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-logger = logging.getLogger(__name__)
-
 # Define your tokens and other constants
-TOKEN = '6690266941:AAEhOmzbAk2iLgfmli-hamBOdgJ9Kf4RtFY'
-IMAGE_PATH = 'assets/wana_bingo.jpg'
-WEB_APP_INSTRUCTION_URL = 'https://abel-portfolio.vercel.app/' 
-CHAPPA_API_KEY = "CHASECK_TEST-mDhArKgaAQuqr0FsbtHx3pGwboi7ZxZd"
+TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+CHAPPA_API_KEY = 'YOUR_CHAPPA_API_KEY' 
 chapa = Chapa(CHAPPA_API_KEY, 
               response_format='json')
 
